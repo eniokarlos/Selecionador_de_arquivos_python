@@ -24,7 +24,6 @@ os.chdir(caminho_original)
 for root, dirs, files in os.walk(caminho_original):
     for file in files:
         for c in range (0, len(lista)):
-            ctr_local = c
             old_path = os.path.join(caminho_original, lista[c] + extension)
             new_path = os.path.join(caminho_novo, '{}'.format(c+1) + extension)
             if file.startswith(lista[c] + extension):
